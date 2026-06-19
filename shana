@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Best City — City Guide</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul, ol {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* Header */
+    .header .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header .menu ul {
+      display: flex;
+      gap: 30px;
+    }
+
+    .header .menu ul li a {
+      display: block;
+      color: inherit;
+    }
+
+    /* Hero */
+    .hero-section {
+      text-align: center;
+      background-color: rgb(13, 115, 119);
+      padding: 30px 0;
+      color: aliceblue;
+    }
+
+    .hero-section img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+    }
+
+    /* Content */
+    .content {
+      padding: 40px 0;
+    }
+
+    .content .content-flex {
+      display: flex;
+      gap: 20px;
+    }
+
+    .content .item {
+      min-width: 0;
+    }
+
+    .content .item-1,
+    .content .item-3 {
+      flex: 3;
+    }
+
+    .content .item-2 {
+      flex: 4;
+    }
+
+    .content .item-2 img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .header .header-flex {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .header .menu ul {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .content .content-flex {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-flex">
+        <div class="logo">
+          <a href="#"><h3>best city guide</h3></a>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">ice cream</a></li>
+            <li><a href="#">coffee</a></li>
+            <li><a href="#">donut</a></li>
+            <li><a href="#">cookie</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-section-flex">
+        <img src="coffee-tea.jpg" alt="Coffee and tea" />
+        <h2>The Best City</h2>
+        <p>the best drinks and eats in the best city ever</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="content">
+    <div class="container">
+      <div class="content-flex">
+        <div class="item item-1">
+          <div class="holder">
+            <h2>WELCOME</h2>
+            <p>in Melbourne, but the locals know it takes time to discover the hidden gems. Luckily, you've stumbled across one of them here with Addict Café. We are the perfect brunch spot where you can enjoy creative, delicious meals with our Veneziano Coffee, which is certified organic by the Biological Farmers Association and made right here in Melbourne.</p>
+          </div>
+        </div>
+
+        <div class="item item-2">
+          <div class="holder">
+            <h2>GOOD FOOD</h2>
+            <div class="content-box">
+              <img src="food.jpeg" alt="A plate of food" />
+              <div class="caption">
+                <h3>some header content caption</h3>
+                <p>we offer the best beverages in the world such as soft drinks and also spirits like wine, beer and other booze based on your preference</p>
+              </div>
+            </div>
+            <p>As a much-loved go-to that has been operating in the local community for eight years, we have a range of signature dishes that our regulars keep coming back for. We encourage you to try some of them for yourself. From our smashed avo to the French toast and pan-roasted mushrooms, there is a scrumptious option for everyone.</p>
+          </div>
+        </div>
+
+        <div class="item item-3">
+<div class="holder">
+            <h2>HOW TO GET HERE</h2>
+            <p>there are a lot of options you can choose among them</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
